@@ -1,8 +1,5 @@
-// import dependencies
-// import Schema constructor and model function
 const { Schema, model } = require('mongoose');
 
-// create schema
 const PizzaSchema = new Schema({
   pizzaName: {
     type: String
@@ -21,8 +18,6 @@ const PizzaSchema = new Schema({
   toppings: []
 });
 
-// create the Pizza model using the PizzaSchema
 const Pizza = model('Pizza', PizzaSchema);
 
-// export the Pizza model
 module.exports = Pizza;
